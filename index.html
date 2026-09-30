@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171918">
+  <title>Bunbom Journals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="signup">
+  <main class="window">
+    <header class="topbar">
+      <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <a class="brand" href="index.html"><span class="brand-mark">b</span>Bunbon Journals</a>
+      <span class="topbar-spacer"></span>
+      <button class="icon-button tip theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.7 8.7 0 1 0 20.5 14.2Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </header>
+    <div class="auth-view">
+      <aside class="auth-aside">
+        <div class="aside-top">
+          <h1>Hop a little space, just for you.</h1>
+          <p>Keep your school days, bright ideas, and happy little doodles in one cozy place.</p>
+        </div>
+        <img class="aside-art" src="images/bunny.jpg" alt="Bunnies nestled in a dreamy cloudscape">
+      </aside>
+      <section class="auth-form-wrap">
+        <h2>Make your student space</h2>
+        <p>Your details stay on this device.</p>
+        <form id="signup-form">
+          <div class="form-grid signup-grid">
+            <div class="field"><label for="student-name">Full name</label><input id="student-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+            <div class="field"><label for="birthday">Birthday</label><input id="birthday" name="birthday" type="date" required></div>
+            <div class="field"><label for="grade">Grade / year level</label><input id="grade" name="grade" required placeholder="e.g. Grade 10"></div>
+            <div class="field"><label for="section">Section</label><input id="section" name="section" required placeholder="e.g. Sampaguita"></div>
+            <div class="field"><label for="school-level">School level</label><select id="school-level" name="schoolLevel" required><option value="" disabled selected>Select level</option><option>Elementary</option><option>High school</option><option>College</option></select></div>
+            <div class="field"><label for="student-id">Student ID number</label><input id="student-id" name="studentId" required placeholder="Your ID number"></div>
+            <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number"></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+          </div>
+          <div class="form-actions">
+            <p class="hint">No password cuz this is local demo n time restraints</p>
+            <button class="primary-button" type="submit">Sign up <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+        <p class="login-link">Already on this device? <button type="button" id="continue-button">Continue to your journal(not available rn)</button></p>
+      </section>
+    </div>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

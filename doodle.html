@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171918">
+  <title>Doodle · Bunbom Journals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body data-page="doodle">
+  <main class="window">
+    <header class="topbar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><a class="brand" href="home.html"><span class="brand-mark">b</span>Bunbon Journals</a><span class="topbar-spacer"></span>
+      <button class="icon-button tip theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.7 8.7 0 1 0 20.5 14.2Z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+      <a class="icon-button tip" href="profile.html" aria-label="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5v.2h-2.4v-.2a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1L8 17l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H6.7v-2.4h.2a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9L8 8.6l1.7-1.7.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.5v-.2h2.4v.2a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1 1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.5 1h.2v2.4h-.2a1.7 1.7 0 0 0-1.5 1Z"/></svg></a>
+    </header>
+    <div class="view"><aside class="sidebar" aria-label="Main navigation">
+      <a class="nav-link" href="home.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg></a>
+      <a class="nav-link" href="profile.html" aria-label="Student profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></a>
+      <a class="nav-link" href="journal.html" aria-label="Journal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v18H7.5A2.5 2.5 0 0 0 5 22z"/><path d="M5 4.5V22M9 7h7M9 11h7"/></svg></a>
+      <a class="nav-link active" href="doodle.html" aria-label="Doodle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 9.8-9.8a2.1 2.1 0 0 1 3 0l1 1a2.1 2.1 0 0 1 0 3L8 20H4z"/><path d="m12.5 7.5 4 4M4 20l4-1"/></svg></a>
+    </aside><section class="content">
+      <div class="page-heading"><div><p class="eyebrow">THE DOODLE DESK</p><h1>A little doodle time</h1><p class="subtitle">Make a mark, change your mind, keep going.</p></div></div>
+      <section class="surface widget"><div class="canvas-tools" role="toolbar" aria-label="Drawing tools"><button class="tool-button active" data-tool="pencil" type="button" aria-label="Pencil" title="Pencil"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 9.8-9.8a2.1 2.1 0 0 1 3 0l1 1a2.1 2.1 0 0 1 0 3L8 20H4z"/><path d="m12.5 7.5 4 4"/></svg></button><button class="tool-button" data-tool="eraser" type="button" aria-label="Eraser" title="Eraser"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 21 10.8-10.8a2.8 2.8 0 0 0 0-4L16 4.4a2.8 2.8 0 0 0-4 0L3 13.5a2.1 2.1 0 0 0 0 3L7 21Zm0 0h13"/><path d="m9 8 7 7"/></svg></button><span class="tool-separator"></span><label class="color-picker-label" aria-label="Pencil color"><input class="color-picker" id="brush-color" type="color" value="#354032"></label><label class="range-label" for="brush-size">Size <input id="brush-size" type="range" min="2" max="36" value="6"><span id="size-value">6</span></label><span class="topbar-spacer"></span><button class="quiet-button" id="clear-canvas" type="button">Clear canvas</button></div><div class="canvas-wrap"><canvas id="drawing-board" aria-label="Drawing canvas"></canvas></div><p class="canvas-note">Your doodle saves on this device as you draw.</p></section>
+    </section></div>
+  </main>
+</body>
+</html>
