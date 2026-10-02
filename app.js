@@ -7,7 +7,7 @@ const STORAGE = {
 
 const profile = readJson(STORAGE.profile);
 const currentPage = document.body.dataset.page;
-let theme = localStorage.getItem(STORAGE.theme) || "light";
+let theme = document.body.dataset.homeVariant || localStorage.getItem(STORAGE.theme) || "light";
 
 document.body.dataset.theme = theme;
 updateThemeControls();
